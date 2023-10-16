@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Modal | Lux Prajapati</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7297/7297826.png" type="image/x-icon">
+</head>
+<body>
+   <div class="myWrapper">
+
+    <!-- circle 1 & 2 -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!-- Card -->
+    <div class="wrapper">
+      <div class="card-wrapper">
+        <!-- Image -->
+        <div>
+          <img src="https://media.licdn.com/dms/image/D4D03AQGO8VsWeBwQZQ/profile-displayphoto-shrink_400_400/0/1694860978715?e=1702512000&v=beta&t=JuiFxf4igipTV_WuWY0waPehziuB9EeJe9AJzoxHe8k" alt="Lux Img">
+        </div>
+        <!-- name -->
+        <div class="user-name">
+          <h2>Lux Prajapati</h2>
+        </div>
+        <!-- Designation -->
+        <div class="designation">
+          <h3 class="readmore">Tech Savvy Computer Engineering Student | Crafting Innovative Solutions | Proficient in Frontend Technologies | MERN Stack Developer Loading...!</h3>
+          <h3 onclick="about()" class="aboutUser">About Me</h3>
+          <h4 class="aboutme">
+            Tech Savvy Computer Engineering Student | Crafting Innovative Solutions | Proficient in Frontend Technologies | MERN Stack Developer Loading...!</h4>
+        </div>
+
+        <div class="bottom-group">
+          <button onclick="openModal()" class="btn-share btn-card">
+            <i class="fa-solid fa-share" style="color: #95a0b1;"></i>
+          <div>Share My Profile</div>
+          </button>
+
+          <button class="btn-follow btn-card">Follow me</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Component -->
+    <div class="modal">
+      <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark fa-2xl close" style="color: #939fb4;"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Share this via</h3>
+        <div class="icon-container">
+          <a href="" class="icon" id="facebook">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </a>
+          <a href="" class="icon" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="" class="icon" id="twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="" class="icon" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="icon" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- overlay -->
+    <div class="overlayA" onclick="closeModalA()"></div>
+    <div class="overlay" onclick="closeModal()"></div>
+
+
+   </div>
+
+   <script src="https://kit.fontawesome.com/dccd8322a4.js" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+</body>
+</html>
